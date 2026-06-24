@@ -4,10 +4,6 @@ body {
     background-color: #0d2360;
 
     background-image:
-        linear-gradient(
-            rgba(13,35,96,.85),
-            rgba(13,35,96,.85)
-        ),
         url("../images/BG.png");
 
     background-size: cover;
