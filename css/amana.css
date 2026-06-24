@@ -1,0 +1,517 @@
+/* =========================
+   Categories
+========================= */
+
+.add-category-btn {
+
+    background: #232b69;
+
+    color: #fff;
+
+    border: none;
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.categories-filters {
+
+    margin: 25px 0;
+}
+
+.categories-filters label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+.categories-filters .form-control,
+.categories-filters .form-select {
+
+    height: 48px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d9dbe7;
+}
+
+.remove-filter {
+
+    margin-bottom: 15px;
+}
+
+.remove-filter a {
+
+    color: #3658d6;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.table-top {
+
+    margin-bottom: 12px;
+}
+
+.table-top h5 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #222;
+}
+
+.table-wrapper {
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border: 1px solid #eceef5;
+}
+
+.categories-table {
+
+    margin-bottom: 0;
+}
+
+.categories-table thead {
+
+    background: #fafafa;
+}
+
+.categories-table th {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #8d8d8d;
+
+    border-bottom: 1px solid #eceef5;
+
+    white-space: nowrap;
+}
+
+.categories-table td {
+
+    vertical-align: middle;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #f0f2f8;
+}
+
+.row-number {
+
+    width: 24px;
+
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #e7faf3;
+
+    color: #10b981;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    margin: auto;
+}
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.edit-btn,
+.delete-btn {
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+}
+
+.edit-btn img,
+.delete-btn img {
+
+    width: 22px;
+}
+
+.table-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 20px;
+
+    border-top: 1px solid #eef0f6;
+
+    background: #fff;
+}
+
+.pagination-info {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.pagination {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.pagination button {
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 8px;
+
+    border: 1px solid #d9dbe7;
+
+    background: white;
+}
+
+.pagination button.active {
+
+    background: #232b69;
+
+    color: white;
+
+    border-color: #232b69;
+}
+
+.page-header-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 30px;
+}
+
+.table-header-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.table-title h5 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #222;
+}
+
+.remove-filter {
+
+    margin: 0;
+}
+
+.footer-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+.footer-right select {
+
+    width: 55px;
+
+    height: 30px;
+
+    border: 1px solid #e2e4ed;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+.footer-center {
+
+    font-size: 13px;
+
+    color: #888;
+}
+
+.footer-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.page-btn {
+
+    width: 28px;
+
+    height: 28px;
+
+    border: 1px solid #e2e4ed;
+
+    background: white;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+.page-btn.active {
+
+    background: #2d377d;
+
+    color: white;
+
+    border-color: #2d377d;
+}
+
+.add-category-modal {
+
+    border: none;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.add-category-modal .modal-header {
+
+    border-bottom: none;
+
+    padding: 18px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-category-modal .modal-title {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #222c69;
+}
+
+.add-category-modal .btn-close {
+
+    margin: 0;
+}
+
+.add-category-modal .modal-body {
+
+    padding: 10px 20px 20px;
+}
+
+.add-category-modal .form-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+.add-category-modal .form-control,
+.add-category-modal .form-select {
+
+    height: 48px;
+
+    border: 1px solid #d9dbe7;
+
+    border-radius: 10px;
+}
+
+.modal-submit-btn {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #4956d6,
+        #222c69
+    );
+
+    color: white;
+
+    font-weight: 700;
+
+    margin-top: 10px;
+}
+
+.modal-backdrop.show {
+
+    opacity: .65;
+}
+
+.action-container {
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.expand-btn {
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.expand-icon {
+
+    width: 18px;
+
+    transition: .3s;
+}
+
+.action-container.active .expand-icon {
+
+    transform: rotate(180deg);
+}
+
+.sub-actions {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.action-container.active .sub-actions {
+
+    max-height: 200px;
+
+    opacity: 1;
+
+    margin-top: 10px;
+}
+
+.sub-actions button {
+
+    border: none;
+
+    background: transparent;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    color: #222c69;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.expand-icon {
+
+    transition: transform .5s ease;
+}
+
+.action-container.active .expand-icon {
+
+    transform: rotate(180deg);
+}
+

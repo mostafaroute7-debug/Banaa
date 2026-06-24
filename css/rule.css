@@ -1,0 +1,144 @@
+.roles-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:35px;
+}
+
+.add-role-btn{
+    background:#4954d4;
+    color:#fff;
+    border:none;
+    height:44px;
+    padding:0 18px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:700;
+}
+
+.role-filter{
+    width:290px;
+    margin-bottom:25px;
+}
+
+.role-filter label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.role-filter .form-control{
+    height:54px;
+    border-radius:10px;
+}
+
+.table-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.table-top h4{
+    font-size:32px;
+    font-weight:700;
+}
+
+.remove-filter{
+    color:#4253d8;
+    text-decoration:none;
+}
+
+.table-wrapper{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.roles-table{
+    margin-bottom:0;
+}
+
+.roles-table th{
+    background:#fafafa;
+    color:#8d95a7;
+    font-size:14px;
+    font-weight:700;
+}
+
+.roles-table th,
+.roles-table td{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.roles-table tbody tr{
+    border-bottom:1px solid #edf0f5;
+}
+
+.action-buttons{
+    display:flex;
+    gap:18px;
+}
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    background:none;
+}
+
+.edit-btn img{
+    width:22px;
+}
+
+.delete-btn img{
+    width:20px;
+}
+
+.table-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.footer-right{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.footer-left{
+    display:flex;
+    gap:8px;
+}
+
+.page-btn{
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:8px;
+    background:#f4f5f9;
+}
+
+.page-btn.active{
+    background:#24348b;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .roles-header,
+    .table-top,
+    .table-footer{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .role-filter{
+        width:100%;
+    }
+
+}

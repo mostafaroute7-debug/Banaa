@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة التحكم</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+                    <img src="images/icons/logo.svg" alt="logo">
+                </div>
+                <button class="collapse-btn" id="toggleSidebar">
+                    <img src="images/icons/collapse.svg" alt="collapse">
+                </button>
+
+
+            </div>
+
+            <!-- Current Page -->
+            <div class="sidebar-title">
+                <p>مراقبة رقم تثبيت البرنامج</p>
+
+                <div class="active-page">
+                    <img src="images/icons/dashboard.svg" alt="">
+                    <span>مراقبة رقم تثبيت البرنامج</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة الاشتراطات -->
+            <div class="menu-section">
+
+                <h6>إدارة الاشتراطات</h6>
+
+                <ul>
+
+                    <li class="menu-item active">
+                        <img src="images/icons/conditions.svg">
+                        <span>الاشتراطات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add.svg">
+                        <span>إضافة شرط</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/categories.svg">
+                        <span>التصنيفات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/text.svg">
+                        <span>نصوص الاشتراطات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة المعلومات -->
+            <div class="menu-section">
+
+                <h6>إدارة المعلومات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/info.svg">
+                        <span>معلومات البناء</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- الأمانات والبلديات -->
+            <div class="menu-section">
+
+                <h6>إدارة الأمانات والبلديات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/flag.svg">
+                        <span>الأمانات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/city.svg">
+                        <span>البلديات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- المستخدمين -->
+            <div class="menu-section">
+
+                <h6>إدارة المستخدمين</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/users.svg">
+                        <span>المستخدمين</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add-user.svg">
+                        <span>إضافة مستخدم</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/request.svg">
+                        <span>الطلبات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/roles.svg">
+                        <span>الأدوار</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/profile.svg">
+                        <span>تعديل الملف الشخصي</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+
+            <div class="top-bar">
+
+                <div class="search-box">
+
+                    <input type="text" placeholder="البحث بالاسم او كلمات بحث...">
+
+                    <img src="images/icons/search.svg" class="search-icon">
+
+                </div>
+
+                <div class="top-icons">
+
+                    <button class="top-btn">
+                        <img src="images/icons/bell.svg">
+                    </button>
+
+                    <button class="top-btn">
+                        <img src="images/icons/user.svg">
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Header -->
+
+            <div class="page-header-row">
+
+                <div class="page-header">
+
+                    <h3>التصنيفات</h3>
+
+                    <p>
+                        الرئيسية /
+                        التصنيفات
+                    </p>
+
+                </div>
+
+                <button class="add-category-btn" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
+
+                    <span>+</span>
+
+                    إضافة تصنيف
+
+                </button>
+
+            </div>
+
+            <!-- Filters -->
+
+            <div class="categories-filters">
+
+                <div class="row g-3">
+
+                    <div class="col-lg-4">
+
+                        <label>
+                            الشرط
+                        </label>
+
+                        <input type="text" class="form-control" placeholder="الشرط">
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <label>
+                            نوع الشرط
+                        </label>
+
+                        <select class="form-select">
+
+                            <option>
+                                اختر نوع الشرط
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="table-header-row">
+
+                <div class="table-title">
+
+                    <h5>
+                        10 تصنيفات
+                    </h5>
+
+                </div>
+
+                <div class="remove-filter">
+
+                    <a href="#">
+
+                        ×
+                        إزالة الفلتر
+
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Table -->
+
+            <div class="table-wrapper">
+
+                <div class="table-responsive">
+
+                    <table class="table categories-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>م</th>
+
+                                <th>الاسم</th>
+
+                                <th>نوع الشرط</th>
+
+                                <th>أضيف بواسطة</th>
+
+                                <th>تاريخ الإضافة</th>
+
+                                <th>عدل بواسطة</th>
+
+                                <th>تاريخ التعديل</th>
+
+                                <th>الإجراءات</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <span class="row-number">1</span>
+                                </td>
+
+                                <td>نسبة البناء</td>
+
+                                <td>اشتراطات بلدية</td>
+
+                                <td>مايكل مجدي</td>
+
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>-</td>
+
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">2</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">3</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">4</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">5</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">6</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">7</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">8</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><span class="row-number">9</span></td>
+                                <td>نسبة البناء</td>
+                                <td>اشتراطات بلدية</td>
+                                <td>مايكل مجدي</td>
+                                <td>23 April 2026, 1:46 PM</td>
+                                <td>-</td>
+                                <td>23 April 2026, 1:46 PM</td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            <img src="images/icons/edit.svg">
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            <img src="images/icons/delete.svg">
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Footer -->
+
+                <div class="table-footer">
+
+                    <div class="footer-right">
+
+                        <span>
+                            عرض
+                        </span>
+
+                        <select>
+
+                            <option>
+                                10
+                            </option>
+
+                        </select>
+
+                        <span>
+                            اشتراطات
+                        </span>
+
+                    </div>
+
+                    <div class="footer-center">
+
+                        عرض 1 إلى 9 من 9 اشتراطات
+
+                    </div>
+
+                    <div class="footer-left">
+
+                        <button class="page-btn">
+                            ‹
+                        </button>
+
+                        <button class="page-btn active">
+                            1
+                        </button>
+
+                        <button class="page-btn">
+                            ›
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- Add Category Modal -->
+
+    <div class="modal fade" id="addCategoryModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content add-category-modal">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        إضافة تصنيف
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            اسم التصنيف
+                        </label>
+
+                        <input type="text" class="form-control" placeholder="ادخل اسم التصنيف">
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            نوع الشرط
+                        </label>
+
+                        <select class="form-select">
+
+                            <option>
+                                اختر نوع الشرط
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button class="modal-submit-btn">
+
+                        قبول
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/dashboard.js"></script>
+
+
+
+
+</body>
+
+</html>

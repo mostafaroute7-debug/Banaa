@@ -1,0 +1,201 @@
+.requests-header {
+
+    margin-bottom: 30px;
+}
+
+.requests-header h3 {
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.requests-header p {
+
+    color: #9ca3af;
+
+    margin-top: 6px;
+}
+
+.requests-filters {
+
+    margin-bottom: 25px;
+}
+
+.requests-filters label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+}
+
+.requests-filters .form-control,
+.requests-filters .form-select {
+
+    height: 54px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.requests-table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.requests-table-header h4 {
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+.requests-table-header a {
+
+    text-decoration: none;
+
+    color: #4f46e5;
+}
+
+.requests-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 16px;
+
+    border: 1px solid #edf0f5;
+
+    background: #fff;
+}
+
+.requests-table {
+
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.requests-table th {
+
+    background: #f8f9fc;
+
+    color: #8b95a7;
+
+    padding: 18px;
+
+    white-space: nowrap;
+
+    font-size: 14px;
+}
+
+.requests-table td {
+
+    padding: 20px 18px;
+
+    border-bottom: 1px solid #edf0f5;
+
+    white-space: nowrap;
+
+    text-align: center;
+}
+
+.actions-column {
+
+    position: sticky;
+
+    left: 0;
+
+    background: white;
+
+    min-width: 90px;
+
+    z-index: 10;
+}
+
+.requests-table thead .actions-column {
+
+    background: #f8f9fc;
+}
+
+.action-btn {
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.action-btn img {
+
+    width: 18px;
+}
+
+.status {
+
+    padding: 6px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.success {
+
+    background: #dff7ea;
+
+    color: #17b26a;
+}
+
+.failed {
+
+    background: #ffe2e2;
+
+    color: #ef4444;
+}
+
+@media (max-width: 992px) {
+
+    .requests-table {
+
+        min-width: 1300px;
+    }
+
+    .requests-table-header {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+
+.table-wrapper{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.table-scroll{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.categories-table{
+    border-collapse: collapse;
+}

@@ -1,0 +1,68 @@
+.request-details-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:25px;
+}
+
+.download-btn{
+    background:#4f56d3;
+    border:none;
+    color:#fff;
+    height:42px;
+    padding:0 18px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.download-btn img{
+    width:16px;
+}
+
+.request-details-card{
+    background:#f6f7fb;
+    border-radius:20px;
+    padding:24px;
+}
+
+.detail-item label{
+    display:block;
+    margin-bottom:10px;
+    color:#222;
+    font-weight:700;
+    font-size:14px;
+}
+
+.detail-value{
+    height:54px;
+    background:#fff;
+    border:1px solid #e7e7e7;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+    color:#b0b0b0;
+    font-size:14px;
+}
+
+.detail-value.failed{
+    color:#a8a8a8;
+}
+
+@media(max-width:768px){
+
+    .request-details-header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .download-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}

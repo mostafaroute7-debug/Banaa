@@ -1,0 +1,340 @@
+.conditions-actions {
+    margin-bottom: 25px;
+}
+
+.add-condition-btn {
+
+    background: #222c69;
+
+    color: white;
+
+    border: none;
+
+    height: 42px;
+
+    padding: 0 20px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+.add-condition-btn span {
+    margin-left: 6px;
+}
+
+.filters-container {
+
+    margin-bottom: 40px;
+}
+
+.filters-container label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+.filters-container .form-control,
+.filters-container .form-select {
+
+    height: 48px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d8d8d8;
+
+    background: white;
+}
+
+.empty-state img {
+
+    width: 130px;
+
+    margin-bottom: 15px;
+}
+
+.empty-state {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.empty-state h5 {
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #222;
+
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+
+    color: #b3b3b3;
+
+    font-size: 13px;
+}
+
+.page-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.add-condition-btn {
+
+    background: #232b69;
+
+    color: #fff;
+
+    border: none;
+
+    height: 38px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: .2s;
+}
+
+.add-condition-btn:hover {
+    background: #1d2459;
+}
+
+.table-section {
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    padding: 15px;
+
+    margin-top: 20px;
+}
+
+.table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.result-count {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.clear-filter {
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #7d8ac7;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.clear-filter img {
+
+    width: 10px;
+    height: 10px;
+}
+.custom-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.custom-table thead {
+
+    background: #f7f8fb;
+}
+
+.custom-table th {
+
+    padding: 14px;
+
+    font-size: 13px;
+
+    color: #8b8b8b;
+
+    font-weight: 600;
+}
+
+.custom-table td {
+
+    padding: 14px;
+
+    border-top: 1px solid #ececec;
+
+    font-size: 14px;
+
+    color: #444;
+}
+
+.status {
+
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.status.approved {
+
+    background: #e7faf1;
+
+    color: #13a36b;
+}
+
+.view-link {
+
+    color: #6f8cff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.table-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.custom-pagination {
+
+    margin: 0;
+}
+
+.custom-pagination .page-link {
+
+    width: 26px;
+    height: 26px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+.custom-pagination .active .page-link {
+
+    background: #25306d;
+
+    color: white;
+}
+
+.view-request {
+
+    border: none;
+
+    background: #eef3ff;
+
+    color: #7693ff;
+
+    border-radius: 5px;
+
+    height: 28px;
+
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.view-request img {
+
+    width: 12px;
+    height: 12px;
+}
+
+.table-summary {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px;
+
+    color: #8b8b8b;
+}
+
+.table-summary select {
+
+    width: 55px;
+    height: 30px;
+
+    border: 1px solid #e3e3e3;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.records-info {
+
+    margin-right: 10px;
+
+    color: #9b9b9b;
+}

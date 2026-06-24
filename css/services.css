@@ -1,0 +1,82 @@
+.request-steps .completed{
+        background-color: #0DC063;
+    color: white;
+}
+.section-header {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header .header-actions .header-actions-img{
+        background-color: #D4D4D433;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+
+.header-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.verify-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 15px;
+}
+
+.active-check {
+
+    border: 1px solid #22C55E !important;
+}
+
+.files-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.files-table th,
+.files-table td {
+
+    padding: 14px;
+
+    border-bottom: 1px solid #EDF0F7;
+
+    font-size: 13px;
+}
+
+.file-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #4F46E5;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.info-card .section-title{
+        margin-bottom: 20px;
+}
+
+.files-table .file-btn {
+        background-color: #EFF6FF;
+    padding: 5px;
+    border-radius: 4px;
+}

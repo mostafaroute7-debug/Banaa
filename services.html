@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة التحكم</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/request.css">
+    <link rel="stylesheet" href="css/add-condition.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+                    <img src="images/icons/logo.svg" alt="logo">
+                </div>
+                <button class="collapse-btn" id="toggleSidebar">
+                    <img src="images/icons/collapse.svg" alt="collapse">
+                </button>
+
+
+            </div>
+
+            <!-- Current Page -->
+            <div class="sidebar-title">
+                <p>مراقبة رقم تثبيت البرنامج</p>
+
+                <div class="active-page">
+                    <img src="images/icons/dashboard.svg" alt="">
+                    <span>مراقبة رقم تثبيت البرنامج</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة الاشتراطات -->
+            <div class="menu-section">
+
+                <h6>إدارة الاشتراطات</h6>
+
+                <ul>
+
+                    <li class="menu-item active">
+                        <img src="images/icons/conditions.svg">
+                        <span>الاشتراطات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add.svg">
+                        <span>إضافة شرط</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/categories.svg">
+                        <span>التصنيفات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/text.svg">
+                        <span>نصوص الاشتراطات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة المعلومات -->
+            <div class="menu-section">
+
+                <h6>إدارة المعلومات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/info.svg">
+                        <span>معلومات البناء</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- الأمانات والبلديات -->
+            <div class="menu-section">
+
+                <h6>إدارة الأمانات والبلديات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/flag.svg">
+                        <span>الأمانات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/city.svg">
+                        <span>البلديات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- المستخدمين -->
+            <div class="menu-section">
+
+                <h6>إدارة المستخدمين</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/users.svg">
+                        <span>المستخدمين</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add-user.svg">
+                        <span>إضافة مستخدم</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/request.svg">
+                        <span>الطلبات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/roles.svg">
+                        <span>الأدوار</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/profile.svg">
+                        <span>تعديل الملف الشخصي</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+
+
+                <div class="search-box">
+
+                    <input type="text" placeholder="البحث بالاسم او كلمات بحث...">
+
+                    <img src="images/icons/search.svg" class="search-icon">
+
+                </div>
+                <div class="top-icons">
+
+
+                    <button class="top-btn">
+                        <img src="images/icons/bell.svg">
+                    </button>
+                    <button class="top-btn">
+                        <img src="images/icons/user.svg">
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Header -->
+            <div class="page-header">
+                <h3>إضافة شرط</h3>
+
+                <p>
+                    الرئيسية /
+                    الاشتراطات /
+                    إضافة شرط
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="request-steps">
+
+                <button class="step-item completed">
+                    <span class="step-number">1</span>
+                    بيانات الطلب
+                </button>
+
+
+                <div class="step-divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+
+                <button class="step-item active">
+                    <span class="step-number">2</span>
+                    الخدمات
+                </button>
+
+
+                <div class="step-divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button class="step-item">
+                    <span class="step-number">3</span>
+                    قائمة الاشتراطات
+                </button>
+
+            </div>
+
+            <section class="info-card">
+
+                <div class="section-header">
+
+                    <div class="header-actions">
+
+                        <img src="images/icons/arrow.svg">
+                        <img class="header-actions-img" src="images/icons/document.svg">
+
+
+                    </div>
+
+                    <div class="header-title">
+
+
+                        <div>
+                            <h5>تفاصيل القطعة</h5>
+                            <p>معلومات القطعة</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="details-grid">
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/user.svg">
+                            <div>
+                                <label>رقم القطعة</label>
+                                <p>#14</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/user.svg">
+                            <div>
+                                <label>عدد النماذج بالقطعه</label>
+                                <p>#14</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/user.svg">
+                            <div>
+                                <label>رقم النموذج</label>
+                                <p>#14</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>نوع النموذج</label>
+                                <p>فيلا منفصلة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>نوع المبنى</label>
+                                <p>سكني / تجاري / مختلط</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>نوع الاستخدام</label>
+                                <p>سكني / تجاري / مختلط</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <div class="field-label">
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>وصف البناء</label>
+                                <p>فيلا بناء</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="info-card">
+
+                <div class="section-title">
+                    التحقق من
+                </div>
+
+                <div class="verify-grid">
+
+
+
+                    <div class="field-box active-check">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>أختر</label>
+                                <p>المخططات المعمارية</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="field-box">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/map.svg">
+                            <div>
+                                <label>أختر</label>
+                                <p>المخططات الإنشائية</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="info-card">
+
+                <div class="section-title">
+                    الملفات
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="files-table">
+
+                        <thead>
+                            <tr>
+                                <th>اسم الملف</th>
+                                <th>الإجراءات</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>قالب المشروع</td>
+
+                                <td>
+                                    <button class="file-btn">
+                                        <img src="images/icons/download.svg">
+                                        تحميل الطلب
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>استعراض الاشتراطات</td>
+
+                                <td>
+                                    <button class="file-btn">
+                                        <img src="images/icons/download.svg">
+                                        تحميل الاشتراطات
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>توليد الإحداثيات</td>
+
+                                <td>
+                                    <button class="file-btn">
+                                        <img src="images/icons/setting.svg">
+                                        إعادة الضبط
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>كمية مواد البناء</td>
+
+                                <td>
+                                    <button class="file-btn">
+                                        <img src="images/icons/setting.svg">
+                                        حساب الكميات
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+
+        </main>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

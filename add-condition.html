@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة التحكم</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/request.css">
+    <link rel="stylesheet" href="css/add-condition.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+                    <img src="images/icons/logo.svg" alt="logo">
+                </div>
+                <button class="collapse-btn" id="toggleSidebar">
+                    <img src="images/icons/collapse.svg" alt="collapse">
+                </button>
+
+
+            </div>
+
+            <!-- Current Page -->
+            <div class="sidebar-title">
+                <p>مراقبة رقم تثبيت البرنامج</p>
+
+                <div class="active-page">
+                    <img src="images/icons/dashboard.svg" alt="">
+                    <span>مراقبة رقم تثبيت البرنامج</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة الاشتراطات -->
+            <div class="menu-section">
+
+                <h6>إدارة الاشتراطات</h6>
+
+                <ul>
+
+                    <li class="menu-item active">
+                        <img src="images/icons/conditions.svg">
+                        <span>الاشتراطات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add.svg">
+                        <span>إضافة شرط</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/categories.svg">
+                        <span>التصنيفات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/text.svg">
+                        <span>نصوص الاشتراطات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- إدارة المعلومات -->
+            <div class="menu-section">
+
+                <h6>إدارة المعلومات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/info.svg">
+                        <span>معلومات البناء</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- الأمانات والبلديات -->
+            <div class="menu-section">
+
+                <h6>إدارة الأمانات والبلديات</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/flag.svg">
+                        <span>الأمانات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/city.svg">
+                        <span>البلديات</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <hr>
+            <div class="menu-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- المستخدمين -->
+            <div class="menu-section">
+
+                <h6>إدارة المستخدمين</h6>
+
+                <ul>
+
+                    <li class="menu-item">
+                        <img src="images/icons/users.svg">
+                        <span>المستخدمين</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/add-user.svg">
+                        <span>إضافة مستخدم</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/request.svg">
+                        <span>الطلبات</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/roles.svg">
+                        <span>الأدوار</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/icons/profile.svg">
+                        <span>تعديل الملف الشخصي</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+
+
+                <div class="search-box">
+
+                    <input type="text" placeholder="البحث بالاسم او كلمات بحث...">
+
+                    <img src="images/icons/search.svg" class="search-icon">
+
+                </div>
+                <div class="top-icons">
+
+
+                    <button class="top-btn">
+                        <img src="images/icons/bell.svg">
+                    </button>
+                    <button class="top-btn">
+                        <img src="images/icons/user.svg">
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Header -->
+            <div class="page-header">
+                <h3>إضافة شرط</h3>
+
+                <p>
+                    الرئيسية /
+                    الاشتراطات /
+                    إضافة شرط
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="request-steps">
+
+                <button class="step-item active">
+                    1 بيانات الطلب
+                </button>
+
+                <div class="step-divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button class="step-item">
+                    2 الخدمات
+                </button>
+
+                <div class="step-divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <button class="step-item">
+                    3 قائمة الاشتراطات
+                </button>
+
+            </div>
+
+            <section class="request-details-card">
+
+                <span class="status-badge">
+                    معتمد
+                </span>
+
+                <div class="request-header">
+
+                    <div class="header-actions">
+
+                        <img src="images/icons/arrow.svg">
+                        <img class="header-actions-img" src="images/icons/document.svg">
+
+
+                    </div>
+
+                    <div class="request-title-area">
+
+                        <h4>تفاصيل الطلب والخدمات</h4>
+
+                        <small>
+                            رقم القرار 460798698 |
+                            تاريخ القرار 2025/01/01
+                        </small>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="details-grid">
+
+                    <div class="field-box">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/user.svg" alt="">
+                            <div>
+
+                                <label>
+                                    اسم مقدم الطلب
+                                </label>
+
+                                <p>
+                                    أحمد محمد العتيبي
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="field-box">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/user.svg" alt="">
+                            <div>
+                                <label>رقم الهوية</label>
+                                <p>1023456789</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="field-box">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/user.svg" alt="">
+                            <div>
+                                <label>اسم المالك</label>
+                                <p>خالد سعد النصر</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="field-box">
+
+                        <div class="field-label">
+
+                            <img src="images/icons/map.svg" alt="">
+                            <div>
+                                <label>رقم المخطط</label>
+                                <p>24245</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="field-box engineer-box">
+
+                        <div class="engineer-icon">
+                            <img src="images/icons/location.svg">
+                        </div>
+                        <div class="engineer-info">
+
+                            <div class="engineer-top">
+
+                                <span class="engineer-name">
+                                    مكتب الرياض للاستشارات الهندسية
+                                </span>
+
+                                <span class="engineer-badge">
+                                    تصميم معماري وإنشائي
+                                </span>
+
+                            </div>
+
+                            <div class="engineer-bottom">
+
+                                <div class="engineer-item">
+                                    <img src="images/icons/location.svg">
+                                    <span>الرياض</span>
+                                </div>
+
+                                <span class="separator">-</span>
+
+                                <div class="engineer-item">
+                                    <img src="images/icons/phone.svg">
+                                    <span>011-4567890</span>
+                                </div>
+
+                                <span class="separator">-</span>
+
+                                <div class="engineer-item">
+                                    <img src="images/icons/person.svg">
+                                    <span>حي 12 يونيو</span>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Ownership -->
+            <section class="info-card">
+
+                <div class="card-title">
+                    بيانات وثيقة الملكية
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C01.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                نوع الوثيقة
+                            </label>
+
+                            <p>
+                                صك الكتروني
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C02.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                رقم الوثيقة
+                            </label>
+
+                            <p>
+                                4567890123
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C03.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                تاريخ الوثيقة
+                            </label>
+
+                            <p>
+                                ١٥ / ٠٣ / ١٤٤٥ هـ
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C04.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                الحي
+                            </label>
+
+                            <p>
+                                القصير
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C05.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                الأمانة
+                            </label>
+
+                            <p>
+                                أمانة المنطقة الشرقية
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="info-item-wrapper">
+
+                        <div class="info-icon">
+
+                            <img src="images/icons/C04.svg" alt="">
+
+                        </div>
+                        <div class="info-item">
+
+                            <label>
+                                البلدية
+                            </label>
+
+                            <p>
+                                العزيزية
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Boundaries -->
+            <section class="info-card">
+
+                <div class="card-title">
+                    الحدود والأطوال
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table class="boundaries-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>الجهة</th>
+                                <th>نوع الحد</th>
+                                <th>الحدود</th>
+                                <th>الأبعاد حسب الوثيقة</th>
+                                <th>الأبعاد حسب الطبيعة</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>الشمال</td>
+                                <td>شارع</td>
+                                <td>20م</td>
+                                <td>35.01</td>
+                                <td>35.01</td>
+                            </tr>
+
+                            <tr>
+                                <td>الجنوب</td>
+                                <td>جار</td>
+                                <td>قطعة رقم 10</td>
+                                <td>35.01</td>
+                                <td>35.01</td>
+                            </tr>
+
+                            <tr>
+                                <td>الشرق</td>
+                                <td>شارع</td>
+                                <td>15م</td>
+                                <td>20.15</td>
+                                <td>20.15</td>
+                            </tr>
+
+                            <tr>
+                                <td>الغرب</td>
+                                <td>جار</td>
+                                <td>قطعة رقم 12</td>
+                                <td>20.15</td>
+                                <td>20.15</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- المساحة الإجمالية -->
+
+                <div class="total-area">
+
+                    <span class="area-label">
+                        المساحة الإجمالية
+                    </span>
+
+                    <span class="area-value">
+                        700 م²
+                    </span>
+
+                </div>
+
+            </section>
+
+            <!-- Coordinates -->
+            <section class="info-card">
+
+                <div class="card-title">
+
+                    الإحداثيات الجغرافية
+
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table class="boundaries-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>الإحداثيات</th>
+                                <th>الشرقيات</th>
+                                <th>الرمز</th>
+                                <th>الشماليات</th>
+                                <th>الرمز</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>12645879</td>
+                                <td>50.0798</td>
+                                <td>E</td>
+                                <td>50.0798</td>
+                                <td>N</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

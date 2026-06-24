@@ -1,0 +1,118 @@
+body {
+    min-height: 100vh;
+
+    background-color: #0d2360;
+
+    background-image:
+        linear-gradient(
+            rgba(13,35,96,.85),
+            rgba(13,35,96,.85)
+        ),
+        url("../images/BG.png");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow-x: hidden;
+}
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.login-card {
+
+    width: 100%;
+    max-width: 500px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.15);
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 40px; /* مساحة للقفل */
+    padding-left: 40px;  /* مساحة للعين */
+}
+
+.icon-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.icon-left {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+
+.login-btn {
+
+    background: linear-gradient(
+        90deg,
+        #1f2d86,
+        #4b58d6
+    );
+
+    border: none;
+
+    height: 50px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    color: white;
+}
+
+.footer-text {
+    text-align: center;
+    color: gray;
+    margin-top: 40px;
+    font-size: 14px;
+}
