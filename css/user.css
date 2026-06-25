@@ -125,3 +125,47 @@
     display: flex;
     justify-content: space-between;
 }
+
+.status{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:90px;
+
+    height:34px;
+
+    border-radius:8px;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+.status.success{
+    background:#e8f8ee;
+    color:#1ea75a;
+}
+
+.status.failed{
+    background:#fdecec;
+    color:#e53935;
+}
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    background:none;
+    cursor:pointer;
+    padding:0;
+}
+
+.edit-btn img,
+.delete-btn img{
+    width:20px;
+}

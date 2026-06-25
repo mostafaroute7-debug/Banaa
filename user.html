@@ -265,7 +265,7 @@
 
             <!-- Empty State -->
 
-            <div class="empty-state">
+            <!-- <div class="empty-state">
 
                 <img src="images/icons/no-data.svg" alt="">
 
@@ -277,8 +277,217 @@
                     استخدم مدخلات التصفية
                 </p>
 
+            </div> -->
+
+            <!-- Table Header -->
+
+            <div class="table-header-row">
+
+                <div class="table-title">
+
+                    <h5>
+                        10 مستخدمين
+                    </h5>
+
+                </div>
+
+                <div class="remove-filter">
+
+                    <a href="#">
+
+                        ×
+                        إزالة الفلتر
+
+
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <div class="table-wrapper">
+
+                <table class="table categories-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>م</th>
+
+                            <th>الاسم الكامل</th>
+
+                            <th>اسم المستخدم</th>
+
+                            <th>الحالة</th>
+
+                            <th>أضيف بواسطة</th>
+
+                            <th>تاريخ الإضافة</th>
+
+                            <th>عدل بواسطة</th>
+
+                            <th>تاريخ التعديل</th>
+
+                            <th>الإجراءات</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <span class="row-number">1</span>
+                            </td>
+
+                            <td>محمد أحمد علي</td>
+
+                            <td>m.ahmed</td>
+
+                            <td>
+
+                                <span class="status success">
+                                    نشط
+                                </span>
+
+                            </td>
+
+                            <td>Admin</td>
+
+                            <td>20-06-2026</td>
+
+                            <td>Admin</td>
+
+                            <td>22-06-2026</td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button class="edit-btn" data-bs-toggle="modal"
+                                                data-bs-target="#editUserModal">
+
+                                                <img src="images/icons/edit.svg">
+
+                                            </button>
+
+                                   <button class="delete-btn" data-bs-toggle="modal"
+                                                data-bs-target="#deleteUserModal">
+
+                                                <img src="images/icons/delete.svg">
+
+                                            </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <span class="row-number">2</span>
+                            </td>
+
+                            <td>أحمد محمود</td>
+
+                            <td>a.mahmoud</td>
+
+                            <td>
+
+                                <span class="status failed">
+                                    غير نشط
+                                </span>
+
+                            </td>
+
+                            <td>Admin</td>
+
+                            <td>15-06-2026</td>
+
+                            <td>Admin</td>
+
+                            <td>18-06-2026</td>
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button class="edit-btn" data-bs-toggle="modal"
+                                                data-bs-target="#editUserModal">
+
+                                                <img src="images/icons/edit.svg">
+
+                                            </button>
+
+                                   <button class="delete-btn" data-bs-toggle="modal"
+                                                data-bs-target="#deleteUserModal">
+
+                                                <img src="images/icons/delete.svg">
+
+                                            </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+
+                <!-- Footer -->
+
+                <div class="table-footer">
+
+                    <div class="footer-right">
+
+                        <span>عرض</span>
+
+                        <select>
+
+                            <option>10</option>
+
+                        </select>
+
+                        <span>مستخدمين</span>
+
+                    </div>
+
+                    <div class="footer-center">
+
+                        عرض 1 إلى 10 من 12 مستخدم
+
+                    </div>
+
+                    <div class="footer-left">
+
+                        <button class="page-btn">
+                            ‹
+                        </button>
+
+                        <button class="page-btn active">
+                            1
+                        </button>
+
+                        <button class="page-btn">
+                            ›
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
         </main>
 
     </div>
@@ -424,6 +633,203 @@
                         حفظ التغييرات
 
                     </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <!-- Edit Modal -->
+
+    <div class="modal fade" id="editUserModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content custom-modal">
+
+                <div class="modal-header custom-modal-header">
+
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                    <h5 class="modal-title">
+                        تعديل مسخدم
+                    </h5>
+
+                </div>
+
+             <div class="modal-body">
+
+                    <form>
+
+                        <div class="row g-4">
+
+                            <!-- اسم الأخير -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    اسم الأخير
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="ادخل اسم الأخير">
+
+                            </div>
+
+                            <!-- اسم الأول -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    اسم الأول
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="ادخل اسم الأول">
+
+                            </div>
+
+                            <!-- اسم المستخدم -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    اسم المستخدم
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="ادخل اسم المستخدم">
+
+                            </div>
+
+                            <!-- كلمة السر -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    كلمة السر
+                                </label>
+
+                                <div class="password-wrapper">
+
+                                    <input type="password" class="form-control" id="userPassword"
+                                        placeholder="ادخل كلمة السر">
+
+                                    <img src="images/icons/eye2.svg" class="eye-icon" id="toggleUserPassword">
+
+                                    <img src="images/icons/lock.svg" class="lock-icon">
+
+                                </div>
+
+                            </div>
+
+                            <!-- مستخدم نشط -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label d-block">
+                                    مستخدم نشط
+                                </label>
+
+                                <div class="form-check form-switch mt-3">
+
+                                    <input class="form-check-input" type="checkbox" checked>
+
+                                </div>
+
+                            </div>
+
+                            <!-- التصنيف -->
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    تصنيف المستخدم
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        اختر نوع التصنيف
+                                    </option>
+
+                                    <option>
+                                        مدير
+                                    </option>
+
+                                    <option>
+                                        مستخدم
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Footer -->
+
+                <div class="modal-footer border-0 justify-content-start">
+
+                    <button class="save-user-btn">
+
+                        حفظ التغييرات
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Delete Modal -->
+
+    <div class="modal fade" id="deleteUserModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content delete-modal">
+
+                <div class="modal-body text-center">
+
+                    <div class="delete-icon">
+
+                        <img src="images/icons/delete.svg" alt="delete">
+
+                    </div>
+
+                    <h5>
+                        هل أنت متأكد من عملية الحذف ؟
+                    </h5>
+
+                    <p>
+                        لا يمكن التراجع عن هذا الإجراء لاحقاً
+                    </p>
+
+                    <div class="delete-actions">
+
+                        <button class="cancel-delete" data-bs-dismiss="modal">
+
+                            إلغاء
+
+                        </button>
+
+                        <button class="confirm-delete">
+
+                            حذف
+
+                        </button>
+
+                    </div>
 
                 </div>
 
